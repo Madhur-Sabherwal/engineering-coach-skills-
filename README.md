@@ -53,4 +53,4 @@ These skills are learning aids. They are not a substitute for qualified instruct
 
 ## Licence
 
-MIT. See [LICENSE](LICENSE); replace `[YOUR NAME]` before publishing.
+MIT. See [LICENSE](LICENSE); Madhur Sabherwal 
