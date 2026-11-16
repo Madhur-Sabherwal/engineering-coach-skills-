@@ -1,0 +1,114 @@
+---
+name: engineering-coach
+description: Picks the right engineering or trade coach for you. Covers 74 disciplines across software and data, electrical and control, mechanical and manufacturing, civil and built environment, process and life sciences, skilled trades and cross-cutting engineering. Use when the user says "coach me", "teach me engineering", "I want to learn a trade", "which coach should I use", or invokes /engineering-coach.
+---
+
+# Engineering Coach Router
+
+Help the learner pick **one** discipline, then hand over to its coach skill. Do not teach from here.
+
+## Steps
+
+1. Ask: what do you want to learn or build, and where are you based (rules differ by country)?
+2. Match their answer to the list below. If two fit, ask which they care about more. If none fit, say so and offer the closest one or suggest adding a new discipline (see CONTRIBUTING).
+3. Tell them the coach name and how to start it (`/coach-<name>`), then invoke it with the Skill tool if available.
+
+All coaches follow the same rule: the learner does the work, the coach teaches, each concept is explained once in 4-year-old language and logged so it is not repeated unless asked.
+
+## Disciplines
+
+### Civil, Structural and Built Environment
+
+- `coach-civil-structural`: Civil and Structural Engineering. Buildings, bridges and structures that stay up.
+- `coach-geotechnical-engineering`: Geotechnical Engineering. Soil, rock and foundations.
+- `coach-surveying-geomatics`: Surveying and Geomatics. Measuring and mapping the land.
+- `coach-transport-highway`: Transport and Highway Engineering. Roads, rail and how people and goods move.
+- `coach-water-wastewater`: Water and Wastewater Engineering. Clean water in and used water out.
+- `coach-construction-management`: Construction Management. Planning and delivering building projects.
+- `coach-architecture-building-design`: Architecture and Building Design. Designing buildings people use and enjoy.
+- `coach-building-services-mep`: Building Services (MEP). Mechanical, electrical and plumbing systems in buildings.
+
+### Cross-Cutting Engineering
+
+- `coach-systems-engineering`: Systems Engineering. Making complex things work together.
+- `coach-engineering-project-management`: Engineering Project Management. Delivering engineering work on time and on budget.
+- `coach-quality-safety-engineering`: Quality, Reliability and Safety Engineering. Preventing failures and harm.
+- `coach-agricultural-engineering`: Agricultural Engineering. Technology and machines for farming.
+- `coach-acoustics-audio-engineering`: Acoustics and Audio Engineering. Sound, rooms and recordings.
+- `coach-optics-photonics`: Optics and Photonics. Light, lenses, lasers and fibre.
+- `coach-packaging-engineering`: Packaging Engineering. Protecting and presenting products.
+- `coach-engineering-math-physics`: Engineering Mathematics and Physics Foundations. The maths and physics every engineer leans on.
+
+### Electrical, Electronics and Control
+
+- `coach-electrical-engineering`: Electrical Engineering (Power). Generation, distribution and use of electrical power.
+- `coach-electronics-design`: Electronics and PCB Design. Designing circuits and circuit boards.
+- `coach-control-systems`: Control Systems and Automation. Making machines and processes behave as intended.
+- `coach-telecom-rf`: Telecommunications and RF. Sending information with radio, fibre and cable.
+- `coach-robotics`: Robotics. Machines that sense, decide and move.
+- `coach-mechatronics`: Mechatronics. Mechanics, electronics and software working together.
+- `coach-power-systems-renewables`: Power Systems and Renewables. Grids, solar, wind and storage.
+
+### Mechanical, Manufacturing and Transport
+
+- `coach-mechanical-design-cad`: Mechanical Design and CAD. Designing parts and machines that work and can be made.
+- `coach-hvac-refrigeration-eng`: HVAC and Refrigeration Engineering. Heating, cooling and air quality in buildings and processes.
+- `coach-automotive-engineering`: Automotive Engineering. Designing and developing vehicles.
+- `coach-aerospace-engineering`: Aerospace Engineering. Aircraft, rockets and spacecraft.
+- `coach-manufacturing-engineering`: Manufacturing Engineering. Making products reliably at scale.
+- `coach-industrial-engineering`: Industrial and Lean Engineering. Making processes faster, safer and less wasteful.
+- `coach-materials-metallurgy`: Materials and Metallurgy. Why materials behave as they do and how to pick them.
+- `coach-welding-fabrication-eng`: Welding and Fabrication. Joining and forming metal into structures.
+- `coach-cnc-machining`: CNC Machining. Cutting parts from stock under computer control.
+- `coach-additive-manufacturing`: 3D Printing and Additive Manufacturing. Building parts layer by layer.
+- `coach-marine-naval-engineering`: Marine and Naval Engineering. Ships, boats and offshore structures.
+
+### Chemical, Process, Resources and Life Sciences
+
+- `coach-chemical-process`: Chemical and Process Engineering. Turning raw materials into products at scale.
+- `coach-oil-gas-petroleum`: Oil, Gas and Petroleum Engineering. Finding, producing and moving hydrocarbons.
+- `coach-mining-engineering`: Mining Engineering. Extracting minerals safely and economically.
+- `coach-nuclear-engineering`: Nuclear Engineering. Energy and technology from atomic nuclei.
+- `coach-environmental-engineering`: Environmental Engineering. Protecting air, water and land.
+- `coach-food-process-engineering`: Food Process Engineering. Making food safely at scale.
+- `coach-pharma-manufacturing`: Pharmaceutical and Biomanufacturing. Making medicines and biologics to strict quality standards.
+- `coach-biomedical-engineering`: Biomedical Engineering. Technology that helps diagnose and treat people.
+- `coach-bioengineering-biotech`: Biotechnology and Bioengineering. Using living systems to make products and solve problems.
+
+### Software, Data and IT
+
+- `coach-software-engineering`: Software Engineering. Designing, building and maintaining programs.
+- `coach-data-engineering`: Data Engineering. Moving, storing and shaping data so others can use it.
+- `coach-data-science-ml`: Data Science and Machine Learning. Finding patterns in data and building predictive models.
+- `coach-devops-cloud`: DevOps and Cloud Engineering. Building, deploying and running systems reliably in the cloud.
+- `coach-cybersecurity`: Cybersecurity. Protecting systems and data from misuse.
+- `coach-embedded-firmware`: Embedded Systems and Firmware. Software that runs on small chips controlling hardware.
+- `coach-web-frontend`: Web Frontend Engineering. What people see and click in the browser.
+- `coach-mobile-app`: Mobile App Development. Apps for phones and tablets.
+- `coach-game-development`: Game Development. Interactive games and simulations.
+- `coach-qa-test-automation`: QA and Test Automation. Proving software works and keeps working.
+- `coach-database-administration`: Database Administration. Keeping databases fast, safe and available.
+- `coach-network-engineering`: Network Engineering. Connecting computers and sites together.
+
+### Skilled Trades
+
+- `coach-electrician-trade`: Electrician. Installing and maintaining electrical wiring and equipment.
+- `coach-plumber-trade`: Plumber and Drainer. Water supply, drainage and sanitary systems.
+- `coach-gas-fitter-trade`: Gas Fitter. Gas supply and appliance installation.
+- `coach-carpenter-joiner-trade`: Carpenter and Joiner. Timber framing, fit-out and furniture.
+- `coach-bricklayer-mason-trade`: Bricklayer and Mason. Brick, block and stone construction.
+- `coach-roofer-trade`: Roofer. Roof structures and weatherproofing.
+- `coach-hvac-technician-trade`: HVAC and Refrigeration Technician. Installing and servicing heating and cooling systems.
+- `coach-auto-mechanic-trade`: Automotive Technician. Servicing and repairing vehicles.
+- `coach-diesel-heavy-plant-trade`: Diesel and Heavy Plant Mechanic. Servicing trucks, excavators and heavy machinery.
+- `coach-sheet-metal-boilermaker-trade`: Sheet Metal and Boilermaker. Cutting, forming and joining sheet and plate.
+- `coach-tiler-plasterer-trade`: Tiler and Plasterer. Finishing walls, floors and ceilings.
+- `coach-painter-decorator-trade`: Painter and Decorator. Preparing and finishing surfaces.
+- `coach-landscaper-horticulture-trade`: Landscaper and Horticulturist. Gardens, planting and outdoor construction.
+- `coach-locksmith-security-trade`: Locksmith and Security Installer. Locks, access control and alarms.
+- `coach-solar-installer-trade`: Solar and Battery Installer. Installing rooftop solar and home batteries.
+- `coach-telecom-cabler-trade`: Telecom and Data Cabler. Installing network, phone and fibre cabling.
+- `coach-millwright-maintenance-trade`: Millwright and Industrial Maintenance. Keeping industrial machinery running.
+- `coach-crane-rigging-trade`: Rigging, Crane and Lifting. Lifting loads safely.
+- `coach-elevator-lift-trade`: Lift and Escalator Technician. Installing and maintaining lifts and escalators.
+
